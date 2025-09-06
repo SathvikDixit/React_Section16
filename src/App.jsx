@@ -10,15 +10,16 @@ const App = () => {
     <div>
       <nav className="p-10 flex justify-center gap-10">
         <Link to='/'>Home</Link>
-        <Link to='/user'>User</Link>
+        <Link to='user'>User</Link>
         <Link to='/about'>About</Link>
       </nav>
 
       <Routes>
-        <Route to='/' element={<Home />} />
-        <Route to='/user' element={<User />} />
-        <Route to='/about' element={<About />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/user' element={<User />} />
+        <Route path='/about' element={<About />} />
       </Routes>
+
       <Home />
     </div>
   );

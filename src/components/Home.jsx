@@ -4,7 +4,6 @@ import User from './User'
 const Home = () => {
   return (
     <div>
-      Home
       <User />
     </div>
   )
